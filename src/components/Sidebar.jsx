@@ -13,8 +13,8 @@ const Sidebar = ({ closeMenu, mobileMenu }) => {
 
     const loadPrompt = async (prompt) => {
         setRecentPrompt(prompt);
-        await onSent(prompt);
         closeMenu();
+        await onSent(prompt);
     }
 
     return (

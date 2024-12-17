@@ -61,7 +61,7 @@ const Main = ({setMobileMenu}) => {
                                 <img src={assets.code_icon} alt="Code Icon" className="w-9 p-1 bg-white rounded-full absolute bottom-2 right-2" />
                             </div>
                         </div>
-                    </> : <div className="result px-[5%] max-h-[70vh] overflow-y-scroll scrollbar-hide">
+                    </> : <div className="result px-[5%] max-h-[73vh] overflow-y-scroll scrollbar-hide">
                         <div className="result-title my-10 flex items-center gap-5">
                             {
                                 user ? <img src={user.imageUrl} alt="" className="w-10 h-10 rounded-full" /> : <img src={assets.user} alt="" className="w-10 h-10 rounded-full" />
@@ -84,7 +84,7 @@ const Main = ({setMobileMenu}) => {
 
                 <div className="main-bottom mt-8 px-5 py-2.5 absolute w-full max-w-[900px] m-auto bottom-0 bg-white">
                     <div className="search-box flex items-center gap-4 py-2 px-4 bg-gray-100 rounded-full">
-                        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder="Enter a prompt here" className="flex-1 bg-transparent outline-none text-lg p-2" />
+                        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder="Enter a prompt here" className="w-[95%] sm:flex-1 bg-transparent outline-none text-md sm:text-lg p-2" />
                         <div className="flex items-center gap-3">
                             <img onClick={() => user ?  onSent() : notify()} src={assets.send_icon} alt="Send Icon" className="w-6 cursor-pointer" />
                         </div>
